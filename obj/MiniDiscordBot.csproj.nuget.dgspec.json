@@ -46,6 +46,18 @@
             },
             "DSharpPlus.Interactivity": {
               "target": "Package",
+              "version": "[3.2.3, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
               "version": "[*, )"
             }
           },
