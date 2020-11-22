@@ -6228,7 +6228,7 @@
       "DSharpPlus.Interactivity >= 3.2.3",
       "Microsoft.Extensions.Configuration >= 5.0.0",
       "Microsoft.Extensions.Configuration.Binder >= 5.0.0",
-      "Microsoft.Extensions.Configuration.Json >= *"
+      "Microsoft.Extensions.Configuration.Json >= 5.0.0"
     ]
   },
   "packageFolders": {
@@ -6288,7 +6288,7 @@
           },
           "Microsoft.Extensions.Configuration.Json": {
             "target": "Package",
-            "version": "[*, )"
+            "version": "[5.0.0, )"
           }
         },
         "imports": [
