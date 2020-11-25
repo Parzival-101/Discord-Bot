@@ -76,7 +76,7 @@ public async Task Interact(CommandContext ctx)
 public async Task Pick(CommandContext ctx ,int min ,int max)
 {
 var random = new Random();
-await ctx.RespondAsync("Your pick is :{random.Next(min,max)}");
+await ctx.RespondAsync($"Your pick is :{random.Next(min,max)}");
 }
 
 }
