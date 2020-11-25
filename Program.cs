@@ -12,6 +12,7 @@ namespace MiniDiscordBot
 {
     class Program
     {
+       
         /* This is the cancellation token we'll use to end the bot if needed(used for most async stuff). */
         private CancellationTokenSource _cts { get; set; }
 
@@ -22,6 +23,8 @@ namespace MiniDiscordBot
         private DiscordClient _discord;
         private CommandsNextModule _commands;
         private InteractivityModule _interactivity;
+
+
 
         /* Use the async main to create an instance of the class and await it. */
         static async Task Main(string[] args) => await new Program().InitBot(args);
@@ -47,8 +50,6 @@ namespace MiniDiscordBot
                     Token = _config.GetValue<string>("discord:token"),
                     TokenType = TokenType.Bot
                 });
-
-              
 
                 // Create the interactivity module
                 _interactivity = _discord.UseInteractivity(new InteractivityConfiguration()
@@ -91,12 +92,12 @@ namespace MiniDiscordBot
 
             return Task.CompletedTask;
         }
-
         async Task RunAsync(string[] args)
         {
             // Connect to discord's service
             Console.WriteLine("Connecting..");
             await _discord.ConnectAsync();
+
             Console.WriteLine("Connected!");
 
             // Keep the bot running until the cancellation token requests we stop
