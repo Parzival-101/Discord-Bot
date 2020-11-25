@@ -70,6 +70,13 @@ public async Task Interact(CommandContext ctx)
     // Homework: have this change depending on if they say "good" or "bad", etc.
     await ctx.RespondAsync("Thank you for telling me how you are!");
 }
-
+//Picking an random number
+[Command("pick")]
+[Description("Pick an number between two numbers")]
+public async Task Pick(CommandContext ctx ,int min ,int max)
+{
+var random = new Random();
+await ctx.RespondAsync("Your pick is :{random.Next(min,max)}");
+}
 
 }
